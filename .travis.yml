@@ -18,8 +18,11 @@ install:
   - npm install
   - bower install
 script:
-  - 'ember try:each'
-  - 'ember try:each --config-path="config/scenarios/builds.js"'
+  - 'ember try:each --config-path="config/ember-try-scenarios.js"'
+  - 'COVERAGE=true ember try:one default'
+  - 'ember try:one release'
+  - 'ALLOW_DEPRECATIONS=true ember try:one beta'
+  - 'ALLOW_DEPRECATIONS=true  ember try:one canary'
 dist: trusty
 addons:
   apt:
