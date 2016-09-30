@@ -18,8 +18,7 @@ install:
   - npm install
   - bower install
 script:
-  - 'ember try:each'
-  - 'ember try:each --config-path="config/scenarios/builds.js"'
+  - 'COVERAGE=true ember try:each'
 dist: trusty
 addons:
   apt:
@@ -28,6 +27,6 @@ addons:
     packages:
       - google-chrome-stable
   code_climate:
-    repo_token: <CODE_CLIMATE_TOKEN_GOES_HERE>
+    repo_token: asdf234asdfsdf
 after_script:
   - codeclimate-test-reporter < coverage/lcov.info

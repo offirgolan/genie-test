@@ -1,0 +1,1 @@
+export { default } from 'genie-test/components/foo-1';
