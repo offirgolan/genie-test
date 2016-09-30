@@ -1,26 +1,27 @@
-# Genie-test
+# genie-test
 
-This README outlines the details of collaborating on this Ember addon.
+[![Build Status](https://travis-ci.org/offirgolan/genie-test.svg)](https://travis-ci.org/offirgolan/genie-test)
+[![npm version](https://badge.fury.io/js/genie-test.svg)](http://badge.fury.io/js/genie-test)
+[![Code Climate](https://codeclimate.com/github/offirgolan/genie-test/badges/gpa.svg)](https://codeclimate.com/github/offirgolan/genie-test)
+[![Test Coverage](https://codeclimate.com/github/offirgolan/genie-test/badges/coverage.svg)](https://codeclimate.com/github/offirgolan/genie-test/coverage)
+[![Dependency Status](https://david-dm.org/offirgolan/genie-test.svg)](https://david-dm.org/offirgolan/genie-test)
+
+## Features
+
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```
+ember install genie-test
+```
 
-## Running
+## Helpful Links
 
-* `ember serve`
-* Visit your app at http://localhost:4200.
+- ### [Live Demo](http://offirgolan.github.io/genie-test)
 
-## Running Tests
+- ### [Changelog](CHANGELOG.md)
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+## Looking for help?
+If it is a bug [please open an issue on GitHub](http://github.com/offirgolan/genie-test/issues).
 
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+## Usage
