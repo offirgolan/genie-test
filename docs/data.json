@@ -1,0 +1,14 @@
+{
+    "project": {
+        "name": "genie-test",
+        "description": "The default blueprint for ember-cli addons.",
+        "url": "http://github.com/Offir Golan/genie-test",
+        "version": "v0.1.0"
+    },
+    "files": {},
+    "modules": {},
+    "classes": {},
+    "elements": {},
+    "classitems": [],
+    "warnings": []
+}
