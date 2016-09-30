@@ -18,7 +18,7 @@ install:
   - npm install
   - bower install
 script:
-  - (eval "$TEST_COMMAND")
+  - 'COVERAGE=true ember try:each'
 dist: trusty
 addons:
   apt:
@@ -30,7 +30,3 @@ addons:
     repo_token: asdf234asdfsdf
 after_script:
   - codeclimate-test-reporter < coverage/lcov.info
-env:
-  - 'TEST_COMMAND="COVERAGE=true ember try:one default"'
-  - 'TEST_COMMAND="ember try:each"'
-  - TEST_COMMAND="ALLOW_DEPRECATIONS=true ember try:each --config-path="config/scenarios/unstable.js"
