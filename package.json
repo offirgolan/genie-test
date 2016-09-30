@@ -58,7 +58,7 @@
     "configPath": "tests/dummy/config",
     "demoURL": "http://offirgolan.github.io/genie-test",
     "versionCompatibility": {
-      "ember": "2.0 || 2.2"
+      "ember": "2.0"
     }
   }
 }

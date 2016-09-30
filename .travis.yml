@@ -18,11 +18,7 @@ install:
   - npm install
   - bower install
 script:
-  - 'ember try:each --config-path="config/ember-try-scenarios.js"'
-  - 'COVERAGE=true ember try:one default'
-  - 'ember try:one release'
-  - 'ALLOW_DEPRECATIONS=true ember try:one beta'
-  - 'ALLOW_DEPRECATIONS=true  ember try:one canary'
+  - (eval "$TEST_COMMAND")
 dist: trusty
 addons:
   apt:
@@ -34,3 +30,7 @@ addons:
     repo_token: asdf234asdfsdf
 after_script:
   - codeclimate-test-reporter < coverage/lcov.info
+env:
+  - 'TEST_COMMAND="COVERAGE=true ember try:one default"'
+  - 'TEST_COMMAND="ember try:each"'
+  - TEST_COMMAND="ALLOW_DEPRECATIONS=true ember try:each --config-path="config/scenarios/unstable.js"
